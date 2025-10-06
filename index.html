@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css" />
+  <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+  <title>Food Ordering System</title>
+</head>
+<body>
+  <h2>Food Ordering System</h2>
+
+  <h3>Menu:</h3>
+  <input type="checkbox" id="Double Cheese Burger"> Double Cheese Burger (₱200)<br>
+  <input type="checkbox" id="Chicken Wings"> Chicken Wings (₱250)<br>
+  <input type="checkbox" id="Iced Lemon Tea"> Iced Lemon Tea (₱90)<br>
+  <input type="checkbox" id="Iced Tea"> Iced Tea (₱80)<br><br>
+
+  <h3>Customer Details:</h3>
+  Name: <input type="text" id="name"><br>
+  Address: <input type="text" id="address"><br>
+  Contact Number: <input type="text" id="contact"><br><br>
+
+  <button id="submit-btn" pys-onClick="create_order">Create Order</button>
+
+  <div id="output"></div>
+
+  <py-script src="main.py"></py-script>
+</body>
+</html>
